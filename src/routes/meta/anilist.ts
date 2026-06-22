@@ -398,7 +398,7 @@ const generateAnilistMeta = (provider: string | undefined = undefined): Anilist 
       url: process.env.PROXY as string | string[],
     });
   } else {
-    return new META.Anilist(new ANIME.Hianime(), {
+    return new META.Anilist(undefined, {
       url: process.env.PROXY as string | string[],
     });
   }
